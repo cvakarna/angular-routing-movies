@@ -5,6 +5,7 @@ import { EditMovieComponent } from "./movies/edit-movie/edit-movie.component";
 import { UsersComponent } from "./users/users.component";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
+import { WatchMovieComponent } from "./movies/watch-movie/watch-movie.component";
 
 const routes = [
     { path: '', component: HomeComponent },
@@ -12,7 +13,9 @@ const routes = [
     {
         path: 'movies', component: MoviesComponent, children: [
             { path: ':id', component: MovieComponent },
+            { path: ':id/watch', component: WatchMovieComponent },
             { path: ':id/:edit', component: EditMovieComponent },
+
         ]
     },
 

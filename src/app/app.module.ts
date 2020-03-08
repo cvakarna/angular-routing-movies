@@ -14,6 +14,7 @@ import { MoviesService } from './movies/movies.service';
 
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app.routing.module';
+import { WatchMovieComponent } from './movies/watch-movie/watch-movie.component';
 
 
 
@@ -25,7 +26,8 @@ import { AppRoutingModule } from './app.routing.module';
     MoviesComponent,
     UserComponent,
     EditMovieComponent,
-    MovieComponent
+    MovieComponent,
+    WatchMovieComponent
   ],
   imports: [
     BrowserModule,

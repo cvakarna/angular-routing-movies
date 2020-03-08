@@ -1,4 +1,9 @@
 <h5>{{ movie.name }}</h5>
-<p>Movie status is {{ movie.status }}</p>
+<img [src]="movie.image" style="width:150px;height:150px;">
+<hr>
+<p>{{ movie.releasedDate }}</p>
+<hr>
+<p>{{ movie.plot }}</p>
+<hr>
 
-<button class="btn btn-primary" (click)="OnEdit()">Edit Movie</button>
+<button class="btn btn-primary" (click)="onWatch()">Watch Now</button>
